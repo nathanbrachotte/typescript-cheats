@@ -65,7 +65,7 @@ npm test
 
 ## Meta
 
-[Nathan Brachotte](https://github.com/nathanbrachotte/) – [@nathanbrachotte](https://twitter.com/nathanbrachotte) – nathan.brachotte@gmail.com -
+[Nathan Brachotte](https://github.com/nathanbrachotte/) – [@nathanbrachotte](https://twitter.com/nathanbrachotte) – [nathan.brachotte@gmail.com](mailto:nathan.brachotte@gmail.com)
 
 Distributed under the MIT license. See `LICENSE` for more information.
 
