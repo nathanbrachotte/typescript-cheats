@@ -6,7 +6,7 @@ module.exports = {
     description:
       'A Cheat Sheet with common Types/Boilerplate codes to get started with types in React & React Native',
     keywords: 'gatsbyjs, gatsby, javascript, sample, something',
-    siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com',
+    siteUrl: 'https://typecript-react-cheat-sheet.netlify.com/',
     author: {
       name: 'Nathan Brachotte',
       url: 'https://twitter.com/nathanbrachotte',
@@ -49,7 +49,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: ''
+        siteUrl: 'https://typecript-react-cheat-sheet.netlify.com/'
       }
     },
     'gatsby-plugin-emotion',
