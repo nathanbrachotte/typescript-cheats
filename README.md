@@ -12,7 +12,7 @@ The main goal of this website is to be a resource for developers that struggle w
 
 # Website URL
 
->
+> TBD
 
 <!--
 ![](header.png)
