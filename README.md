@@ -1,12 +1,12 @@
 # typescript-react-cheat-sheet
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 > A Cheat Sheet with common Types/Boilerplate codes to get started with types in React & React Native
 
 <!-- [![NPM Version][npm-image]][npm-url] -->
 <!-- [![Build Status][travis-image]][travis-url] -->
 <!-- [![Downloads Stats][npm-downloads]][npm-url] -->
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 The main goal of this website is to be a resource for developers that struggle with common Typescript. typescript-react-cheat-sheet is open-source, feel free to submit your PR.
 
