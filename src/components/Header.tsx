@@ -31,6 +31,17 @@ const HomepageLink = styled(Link)`
   }
 `
 
+const PageLink = styled(Link)`
+  color: ${colors.white};
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 1em;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+`
+
 interface HeaderProps {
   title: string
 }
@@ -39,6 +50,8 @@ const Header: React.FC<HeaderProps> = ({ title }) => (
   <StyledHeader>
     <HeaderInner>
       <HomepageLink to="/">{title}</HomepageLink>
+      <PageLink to="/react">React</PageLink>
+      <PageLink to="/react-native">React-Native</PageLink>
     </HeaderInner>
   </StyledHeader>
 )
