@@ -1,11 +1,16 @@
 {
-  "name": "gatsby-starter-typescript-plus",
-  "description": "A starter kit for TypeScript-based Gatsby projects with sensible defaults.",
-  "version": "1.0.0",
+  "name": "typescript-react-cheat-sheet",
+  "description": "A Cheat Sheet with common Types/Boilerplate codes to get started with types in React & React Native",
+  "version": "0.0.1",
   "private": true,
-  "author": "Resi Respati <resir014@gmail.com>",
+  "author": "Nathan Brachotte <nathan.brachotte@gmail.com>",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "typescript",
+    "react",
+    "react-native",
+    "cheat",
+    "cheatsheet"
   ],
   "license": "MIT",
   "main": "n/a",

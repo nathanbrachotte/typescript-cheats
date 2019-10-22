@@ -2,14 +2,15 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'gatsby-starter-typescript-plus',
-    description: 'A starter kit for TypeScript-based Gatsby projects with sensible defaults.',
+    title: 'typecript-react-cheat-sheet',
+    description:
+      'A Cheat Sheet with common Types/Boilerplate codes to get started with types in React & React Native',
     keywords: 'gatsbyjs, gatsby, javascript, sample, something',
     siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com',
     author: {
-      name: 'Resi Respati',
-      url: 'https://twitter.com/resir014',
-      email: 'resir014@gmail.com'
+      name: 'Nathan Brachotte',
+      url: 'https://twitter.com/nathanbrachotte',
+      email: 'nathan.brachotte@gmail.com'
     }
   },
   plugins: [
@@ -48,7 +49,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com'
+        siteUrl: ''
       }
     },
     'gatsby-plugin-emotion',
