@@ -66,7 +66,7 @@
     "@types/react-dom": "^16.8.4",
     "@types/react-helmet": "^5.0.8",
     "@typescript-eslint/eslint-plugin": "^1.10.2",
-    "@typescript-eslint/parser": "^1.10.2",
+    "@typescript-eslint/parser": "^1.13.0",
     "eslint": "^6.0.0",
     "eslint-config-blvd": "^0.1.1",
     "eslint-config-prettier": "^5.0.0",
