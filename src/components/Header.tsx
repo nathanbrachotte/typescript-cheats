@@ -17,6 +17,7 @@ const HeaderInner = styled(Container)`
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   height: 100%;
 `
 
@@ -50,8 +51,10 @@ const Header: React.FC<HeaderProps> = ({ title }) => (
   <StyledHeader>
     <HeaderInner>
       <HomepageLink to="/">{title}</HomepageLink>
-      <PageLink to="/react">React</PageLink>
-      <PageLink to="/react-native">React-Native</PageLink>
+      <div>
+        <PageLink to="/react">React</PageLink>
+        <PageLink to="/react-native">React-Native</PageLink>
+      </div>
     </HeaderInner>
   </StyledHeader>
 )

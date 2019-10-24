@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import Page from '../components/Page'
 import Container from '../components/Container'
 import IndexLayout from '../layouts'
+import '../global.css'
 
 const IndexPage = () => (
   <IndexLayout>
