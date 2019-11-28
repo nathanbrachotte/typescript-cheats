@@ -8,6 +8,8 @@ Now we're writing in Markdown! Pretty nice, huh?
 This starter has out-of-the-box support for basic Markdown rendering. The `content/` directory is where you put all of your Markdown content in. Gatsby will build your pages out of it. Gatsby will also follow the directory structure of your files too, so when you store a page at e.g. `content/projects/large-hadron-collider.md`, it will be built in `/projects/large-hadron-collider/`.
 <span style="color:blue">some _blue_ text</span>.
 
+<details>
+
 ```typescript
 class FlavorForm extends React.Component { // highlight-line
   constructor(props) {
@@ -48,6 +50,8 @@ class FlavorForm extends React.Component { // highlight-line
   }
 }
 ```
+
+</details>
 
 That would [fix the problem](https://codesandbox.io/s/0x0mnlyq8l) but our interval would be cleared and set again whenever the `count` changes. That may be undesirable:
 

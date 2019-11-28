@@ -29,12 +29,7 @@ module.exports = {
               wrapperStyle: 'margin-bottom: 1rem'
             }
           },
-          {
-            resolve: 'gatsby-remark-prismjs',
-            options: {
-              inlineCodeMarker: '±'
-            }
-          },
+          'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
           {
@@ -61,22 +56,22 @@ module.exports = {
     {
       resolve: `gatsby-transformer-sharp`
     },
-    'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-          {
-            resolve: 'gatsby-remark-toc',
-            options: {
-              header: 'Table of Contents', // the custom header text
-              include: [
-                'content/**/*.md' // an include glob to match against
-              ]
-            }
-          }
-        ]
-      }
-    }
+    'gatsby-plugin-react-helmet'
+    // {
+    //   resolve: 'gatsby-transformer-remark',
+    //   options: {
+    //     plugins: [
+    //       {
+    //         resolve: 'gatsby-remark-toc',
+    //         options: {
+    //           header: 'Table of Contents', // the custom header text
+    //           include: [
+    //             'content/**/*.md' // an include glob to match against
+    //           ]
+    //         }
+    //       }
+    //     ]
+    //   }
+    // }
   ]
 }
