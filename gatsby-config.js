@@ -7,7 +7,7 @@ module.exports = {
     siteUrl: 'https://typecript-react-cheat-sheet.netlify.com/',
     author: {
       name: 'Nathan Brachotte',
-      url: 'https://twitter.com/nathanbrachotte',
+      url: 'https://nathanbrachotte.dev',
       email: 'nathan.brachotte@gmail.com'
     }
   },
@@ -61,6 +61,22 @@ module.exports = {
     {
       resolve: `gatsby-transformer-sharp`
     },
-    'gatsby-plugin-react-helmet'
+    'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-toc',
+            options: {
+              header: 'Table of Contents', // the custom header text
+              include: [
+                'content/**/*.md' // an include glob to match against
+              ]
+            }
+          }
+        ]
+      }
+    }
   ]
 }
