@@ -81,7 +81,7 @@ body:lang(ko) article {
  */
 code[class*='language-'],
 pre[class*='language-'] {
-  color: #dadada;
+  color: #ffffff;
   background: none;
   font-family: Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace;
   font-feature-settings: normal;
@@ -178,7 +178,7 @@ pre[class*='language-'] ::selection {
 }
 
 .token.punctuation {
-  color: rgb(124, 220, 250);
+  color: rgba(245, 245, 245, 0.349);
 }
 
 .token.selector,
@@ -194,7 +194,7 @@ pre[class*='language-'] ::selection {
 .token.tag,
 .token.operator,
 .token.keyword {
-  color: #fc5168;
+  color: #ff4f66;
 }
 
 .token.boolean {
@@ -242,6 +242,6 @@ pre[data-line] {
 }
 
 .gatsby-highlight pre[class*='language-'] {
-  float: left;
-  min-width: 100%;
+  /* float: left;
+  min-width: 95%; */
 }

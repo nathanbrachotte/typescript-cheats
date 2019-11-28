@@ -8,8 +8,9 @@ import IndexLayout from '../layouts'
 import '../global.css'
 import { colors } from '../styles/variables'
 
-const Purple = styled.span`
-  color: ${colors.lilac};
+const BoldedBlue = styled.span`
+  color: ${colors.brand};
+  font-weight: bold;
 `
 
 const IndexPage = () => (
@@ -18,8 +19,9 @@ const IndexPage = () => (
       <Container>
         <h1>Welcome</h1>
         <p>
-          Please note that if an type is used in React-Native but also in <Purple>React</Purple>,
-          you'll most likely find your answer in the React Section
+          Please note that if an type is used in <BoldedBlue>React-Native</BoldedBlue> but also in{' '}
+          <BoldedBlue>React</BoldedBlue>, you'll most likely find your answer in the{' '}
+          <BoldedBlue>React</BoldedBlue> Section
         </p>
         <ul>
           <li>
