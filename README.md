@@ -1,6 +1,7 @@
 # typescript-react-cheat-sheet
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d9e791e8-7149-48bd-a257-b9a6e7dd7ae5/deploy-status)](https://app.netlify.com/sites/typescript-react-cheat-sheet/deploys)
 
 > A Cheat Sheet with common Types/Boilerplate codes to get started with types in React & React Native
 
@@ -12,7 +13,7 @@ The main goal of this website is to be a resource for developers that struggle w
 
 # Website URL
 
-> TBD
+> [https://typescript-react-cheat-sheet.netlify.com/](https://typescript-react-cheat-sheet.netlify.com/)
 
 <!--
 ![](header.png)
