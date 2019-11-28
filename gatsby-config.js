@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'typecript-react-cheat-sheet',
+    title: 'typescript-react-cheat-sheet',
     description:
       'A Cheat Sheet with common Types/Boilerplate codes to get started with types in React & React Native',
     keywords: 'gatsbyjs, gatsby, javascript, sample, something',
