@@ -7,6 +7,10 @@ import Container from '../components/Container'
 import IndexLayout from '../layouts'
 import { colors } from '../styles/variables'
 
+const Purple = styled.span`
+  color: ${colors.lilac};
+`
+
 const PageTwo = () => (
   <IndexLayout>
     <Page>
