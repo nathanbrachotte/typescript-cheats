@@ -81,7 +81,7 @@ body:lang(ko) article {
  */
 code[class*='language-'],
 pre[class*='language-'] {
-  color: white;
+  color: #dadada;
   background: none;
   font-family: Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace;
   font-feature-settings: normal;
@@ -153,13 +153,17 @@ pre[class*='language-'] ::selection {
   color: rgb(128, 147, 147);
 }
 
+.token.parameter {
+  color: rgb(252, 194, 88);
+}
+
 .token.string,
 .token.url {
   color: rgb(173, 219, 103);
 }
 
 .token.variable {
-  color: rgb(214, 222, 235);
+  color: rgb(255, 255, 255);
 }
 
 .token.number {
@@ -170,11 +174,11 @@ pre[class*='language-'] ::selection {
 .token.char,
 .token.constant,
 .token.function {
-  color: rgb(130, 170, 255);
+  color: rgb(102, 150, 255);
 }
 
 .token.punctuation {
-  color: rgb(199, 146, 234);
+  color: rgb(124, 220, 250);
 }
 
 .token.selector,
@@ -184,13 +188,13 @@ pre[class*='language-'] ::selection {
 }
 
 .token.class-name {
-  color: rgb(255, 203, 139);
+  color: rgb(255, 243, 139);
 }
 
 .token.tag,
 .token.operator,
 .token.keyword {
-  color: #ffa7c4;
+  color: #fc5168;
 }
 
 .token.boolean {
@@ -218,6 +222,7 @@ pre[data-line] {
   padding-right: 1em;
   padding-left: 1.25em;
   border-left: 0.25em solid #ffa7c4;
+  border-right: 0.25em solid #ffa7c4;
 }
 
 .gatsby-highlight {
