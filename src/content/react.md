@@ -25,7 +25,7 @@ interface State {
 type Props = OwnProps & ReduxProps
 
 // highlight-next-line
-class MyScreen extends PureComponent<Props> {
+class MyScreen extends PureComponent<Props, State> {
   state: State = {
     // Your initial state here
   }
