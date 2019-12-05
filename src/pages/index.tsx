@@ -25,15 +25,18 @@ const IndexPage = () => (
         </p>
         <ul>
           <li>
+            <Link to="/javascript/">JavaScript</Link>
+          </li>
+          <li>
             <Link to="/react/">React</Link>
-            <ul>
+            {/* <ul>
               <li>
                 <Link to="/react-functional-components/">Functional Components</Link>
               </li>
               <li>
                 <Link to="/react-hooks/">Hooks</Link>
               </li>
-            </ul>
+            </ul> */}
           </li>
           <li>
             <Link to="/react-native/">React-Native</Link>
