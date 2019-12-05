@@ -14,4 +14,5 @@ title: 'JavaScript'
 
 </details>
 <!-- [END] DECLARE CLASS -->
-[That's cool! Okay, take me back home.](/)
+
+[back home](/)
