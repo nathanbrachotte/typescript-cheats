@@ -52,7 +52,9 @@ export default connect(mapStateToProps)(MyComponent)
 const UPDATE_USER = 'UPDATE_USER'
 const CREATE_USER = 'CREATE_USER'
 
-{ /* highlight-range{1,4-9,12} */ }
+{
+  /* highlight-range{1,4-9,12} */
+}
 export interface UserState {
   email: string | null
   firstName: string | null
@@ -62,13 +64,10 @@ export interface UserState {
 const INITIAL_STATE: UserState = {
   email: null,
   firstName: null,
-  lastName: null,
+  lastName: null
 }
 
-export default function(
-  state = INITIAL_STATE,
-  action: UserActionTypes,
-): UserState {
+export default function(state = INITIAL_STATE, action: UserActionTypes): UserState {
   switch (action.type) {
     case CREATE_USER: {
       return { ...state, ...action.payload }
@@ -89,7 +88,7 @@ interface CreateUserAction {
 
 export const createUser = (payload: UserState): CreateUserAction => ({
   type: CREATE_USER,
-  payload,
+  payload
 })
 
 interface UpdateUserAction {
@@ -107,13 +106,12 @@ export const updateUser = (payload: {
   leftName?: string
 }): UpdateUserAction => ({
   type: UPDATE_USER,
-  payload,
+  payload
 })
 
 // highlight-next-line
 type UserActionTypes = UpdateUserAction | CreateUserAction
-
-<!-- [END] DECLARE CLASS -->
-
-### Functional Component
 ```
+
+</details>
+<!-- [START] REDUX -->

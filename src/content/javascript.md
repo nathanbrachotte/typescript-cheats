@@ -13,7 +13,4 @@ title: 'JavaScript'
 
 </details>
 <!-- [END] DECLARE CLASS -->
-
-### Functional Component
-
 [That's cool! Okay, take me back home.](/)
