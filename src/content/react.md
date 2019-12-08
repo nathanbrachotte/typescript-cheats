@@ -86,7 +86,7 @@ interface CreateUserAction {
   payload: UserState
 }
 
-export const createUser = (payload: UserState): CreateUserAction => ({
+export const createUser = (payload: CreateUserAction['payload']): CreateUserAction => ({
   type: CREATE_USER,
   payload
 })
@@ -100,11 +100,7 @@ interface UpdateUserAction {
   }
 }
 
-export const updateUser = (payload: {
-  email?: string
-  firstName?: string
-  leftName?: string
-}): UpdateUserAction => ({
+export const updateUser = (payload: UpdateUserAction['payload']): UpdateUserAction => ({
   type: UPDATE_USER,
   payload
 })
