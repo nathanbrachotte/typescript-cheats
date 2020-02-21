@@ -24,5 +24,8 @@
     "statusBar.foreground": "#e7e7e7",
     "tab.activeBorder": "#3566a7"
   },
-  "peacock.color": "#294E80"
+  "peacock.color": "#294E80",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
