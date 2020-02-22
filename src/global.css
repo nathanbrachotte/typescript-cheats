@@ -356,22 +356,8 @@ details[open] > summary {
 }
 
 /* TODO: Put this in header using emotion */
-a.activeTab {
+a.activeTab,
+a.activeTab:hover {
   color: var(--pink);
-  animation-name: goDownABit;
-  animation-duration: 0.3s;
-  animation-delay: 0.15s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes goDownABit {
-  from {
-    padding: 0;
-    font-size: 1.2rem;
-  }
-
-  to {
-    padding: 20px;
-    font-size: 1.4rem;
-  }
+  text-decoration: underline;
 }
