@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.10",
+    "@emotion/css": "^10.0.27",
     "@emotion/styled": "^10.0.12",
     "babel-plugin-styled-components": "^1.10.1",
     "classnames": "^2.2.6",

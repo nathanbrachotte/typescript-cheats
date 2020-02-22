@@ -5,7 +5,9 @@ title: 'React'
 
 ### Class
 
-<!-- [START] DECLARE CLASS -->
+<!-- ************************* -->
+<!-- * [START] DECLARE CLASS * -->
+<!-- ************************* -->
 <details>
 <summary>Declare class</summary>
 
@@ -40,8 +42,13 @@ export default connect(mapStateToProps)(MyComponent)
 ```
 
 </details>
-<!-- [END] DECLARE CLASS -->
-<!-- [START] REDUX -->
+<!-- ************************* -->
+<!-- * [END] DECLARE CLASS * -->
+<!-- ************************* -->
+
+<!-- ************************* -->
+<!-- * [START] REDUX * -->
+<!-- ************************* -->
 <details>
 <summary>Redux reducer & action</summary>
 
@@ -49,24 +56,27 @@ export default connect(mapStateToProps)(MyComponent)
 /**
  * Example for a user reducer
  */
+
 const UPDATE_USER = 'UPDATE_USER'
 const CREATE_USER = 'CREATE_USER'
 
-{
-  /* highlight-range{1,4-9,12} */
-}
+// highlight-start
 export interface UserState {
   email: string | null
   firstName: string | null
   lastName: string | null
 }
+// highlight-end
 
+// highlight-start
 const INITIAL_STATE: UserState = {
   email: null,
   firstName: null,
   lastName: null
 }
+// highlight-end
 
+// highlight-next-line
 export default function(state = INITIAL_STATE, action: UserActionTypes): UserState {
   switch (action.type) {
     case CREATE_USER: {
@@ -81,15 +91,19 @@ export default function(state = INITIAL_STATE, action: UserActionTypes): UserSta
 }
 
 // Everything below can be separated in an userAction.ts file for readability
+// highlight-start
 interface CreateUserAction {
   type: typeof CREATE_USER
   payload: UserState
 }
+// highlight-end
 
+// highlight-start
 export const createUser = (payload: CreateUserAction['payload']): CreateUserAction => ({
   type: CREATE_USER,
   payload
 })
+// highlight-end
 
 interface UpdateUserAction {
   type: typeof UPDATE_USER
@@ -110,6 +124,6 @@ type UserActionTypes = UpdateUserAction | CreateUserAction
 ```
 
 </details>
-<!-- [START] REDUX -->
-
-[back home](/)
+<!-- ************************* -->
+<!-- * [END] REDUX * -->
+<!-- ************************* -->

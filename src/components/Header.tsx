@@ -1,10 +1,12 @@
 import * as React from 'react'
 import styled from '@emotion/styled'
+import css from '@emotion/css'
 import { transparentize } from 'polished'
 import { Link } from 'gatsby'
 
 import { heights, dimensions, colors } from '../styles/variables'
 import Container from './Container'
+import SECTIONS from '../constants/sections'
 
 const StyledHeader = styled.header`
   height: ${heights.header}px;
@@ -34,7 +36,7 @@ const HomepageLink = styled(Link)`
 
 const PageLink = styled(Link)`
   color: ${colors.white};
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin-left: 1em;
   &:hover,
@@ -52,8 +54,11 @@ const Header: React.FC<HeaderProps> = ({ title }) => (
     <HeaderInner>
       <HomepageLink to="/">{title}</HomepageLink>
       <div>
-        <PageLink to="/react">React</PageLink>
-        <PageLink to="/react-native">React-Native</PageLink>
+        {SECTIONS.map(section => (
+          <PageLink activeClassName="activeTab" to={section.path}>
+            {section.label}
+          </PageLink>
+        ))}
       </div>
     </HeaderInner>
   </StyledHeader>

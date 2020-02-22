@@ -3,16 +3,44 @@ layout: page
 title: 'JavaScript'
 ---
 
-### Basic JS Frontend code
+### Basic JS code samples
 
-<!-- [START] DECLARE CLASS -->
+<!-- ************************* -->
+<!-- * [START] Timeouts * -->
+<!-- ************************* -->
 <details>
 <summary>Timeouts</summary>
 
 ```typescript
+let timer: ReturnType<typeof setTimeout> = setTimeout(() => { ... });
 ```
 
 </details>
-<!-- [END] DECLARE CLASS -->
+<!-- ************************* -->
+<!-- * [END] Timeouts * -->
+<!-- ************************* -->
 
-[back home](/)
+<!-- ************************* -->
+<!-- * [START] Asynchronous * -->
+<!-- ************************* -->
+
+### Asynchronous code
+
+<details>
+<summary>Promise</summary>
+
+```typescript
+async function myAsyncFunction(): Promise<string> {
+  return 'Hi!'
+}
+
+const resultWithAwait = await myAsyncFunction()
+myAsyncFunction().then(resultWithChaining => {})
+// highlight-next-line
+// resultWithAwait and resultWithChaining implicit type is String
+```
+
+</details>
+<!-- ************************* -->
+<!-- * [END] Asynchronous * -->
+<!-- ************************* -->

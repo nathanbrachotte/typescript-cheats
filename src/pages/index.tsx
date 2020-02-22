@@ -7,6 +7,7 @@ import Container from '../components/Container'
 import IndexLayout from '../layouts'
 import '../global.css'
 import { colors } from '../styles/variables'
+import SECTIONS from '../constants/sections'
 
 const BoldedBlue = styled.span`
   color: ${colors.brand};
@@ -24,23 +25,11 @@ const IndexPage = () => (
           <BoldedBlue>React</BoldedBlue> Section
         </p>
         <ul>
-          <li>
-            <Link to="/javascript/">JavaScript</Link>
-          </li>
-          <li>
-            <Link to="/react/">React</Link>
-            {/* <ul>
-              <li>
-                <Link to="/react-functional-components/">Functional Components</Link>
-              </li>
-              <li>
-                <Link to="/react-hooks/">Hooks</Link>
-              </li>
-            </ul> */}
-          </li>
-          <li>
-            <Link to="/react-native/">React-Native</Link>
-          </li>
+          {SECTIONS.map(section => (
+            <li>
+              <Link to={`/${section.path}/`}>{section.label}</Link>
+            </li>
+          ))}
         </ul>
       </Container>
     </Page>
