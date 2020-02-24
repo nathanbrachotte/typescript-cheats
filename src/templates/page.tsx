@@ -27,7 +27,7 @@ interface PageTemplateProps {
   }
 }
 
-const PageTemplate: React.SFC<PageTemplateProps> = ({ data }) => (
+const PageTemplate: React.FC<PageTemplateProps> = ({ data }) => (
   <IndexLayout>
     <Page>
       <Container>
@@ -41,6 +41,8 @@ const PageTemplate: React.SFC<PageTemplateProps> = ({ data }) => (
 
 export default PageTemplate
 
+// TODO: ADD TABLE OF CONTENT
+// TODO: ADD TIME TO READ
 export const query = graphql`
   query PageTemplateQuery($slug: String!) {
     site {
