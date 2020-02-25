@@ -6,6 +6,23 @@ title: 'JavaScript'
 ### Basic JS code samples
 
 <!-- ************************* -->
+<!-- * [START] Define object with key/value * -->
+<!-- ************************* -->
+<details>
+<summary>Define object with key/value</summary>
+
+```typescript
+interface MyObject {
+  [key: string]: string | number
+}
+```
+
+</details>
+<!-- ************************* -->
+<!-- * [END] Define object with key/value * -->
+<!-- ************************* -->
+
+<!-- ************************* -->
 <!-- * [START] Timeouts * -->
 <!-- ************************* -->
 <details>
