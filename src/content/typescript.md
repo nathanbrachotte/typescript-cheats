@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 'JavaScript'
+title: 'Typescript'
 ---
 
-### Basic JS code samples
+### Basic TS code samples
 
 <!-- ************************* -->
 <!-- * [START] Define object with key/value * -->

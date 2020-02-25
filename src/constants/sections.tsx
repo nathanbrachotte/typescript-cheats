@@ -1,7 +1,7 @@
 const SECTIONS = [
   {
-    label: 'Basic JS',
-    path: 'javascript'
+    label: 'Basic TS',
+    path: 'typescript'
   },
   {
     label: 'React',
