@@ -262,7 +262,7 @@ summary {
   font-size: 22px;
   transition: 0.3s;
   border-bottom: 2px solid;
-  user-select: none;
+  /* user-select: none; */
   outline: none;
 }
 
@@ -271,7 +271,7 @@ details > div {
   flex-wrap: wrap;
   overflow: auto;
   height: 100%;
-  user-select: none;
+  /* user-select: none; */
   padding: 0 20px;
   font-family: 'Karla', sans-serif;
   line-height: 1.5;
