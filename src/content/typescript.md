@@ -15,6 +15,8 @@ title: 'Typescript'
 interface MyObject {
   [key: string]: string | number
 }
+// or
+interface MyObject = Record<string, string | number>
 ```
 
 </details>
