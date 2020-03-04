@@ -6,6 +6,8 @@ import Page from '../components/Page'
 import Container from '../components/Container'
 import IndexLayout from '../layouts'
 import '../global.css'
+import SECTIONS from '../constants/sections'
+import { EMSGSIZE } from 'constants'
 
 const SectionTitle = styled.h2`
   margin-top: 50px;
@@ -35,6 +37,7 @@ interface IndexProps {
 
 const IndexPage: React.FC<IndexProps> = ({ ...allProps }) => {
   const { edges } = allProps.data.allMarkdownRemark
+  console.log({ edges })
   return (
     <IndexLayout>
       <Page>
@@ -43,21 +46,22 @@ const IndexPage: React.FC<IndexProps> = ({ ...allProps }) => {
             This page displays all entries in this website, if you want to filter by technology use
             the menu on top.
           </p>
-          {edges
-            .filter(
-              edge =>
-                edge.node.frontmatter.title !== 'Example' && !!edge.node.html.includes('<details')
+          {SECTIONS.map(section => {
+            const edge = edges.find(e => e.node.frontmatter.title === section.name)
+            return (
+              edge &&
+              !!edge.node.html.includes('<details') && (
+                <>
+                  <SectionTitle>{edge.node.frontmatter.title}</SectionTitle>
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: edge.node.html
+                    }}
+                  />
+                </>
+              )
             )
-            .map(edge => (
-              <>
-                <SectionTitle>{edge.node.frontmatter.title}</SectionTitle>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: edge.node.html
-                  }}
-                />
-              </>
-            ))}
+          })}
         </Container>
       </Page>
     </IndexLayout>
