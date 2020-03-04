@@ -55,7 +55,7 @@ const Header: React.FC<HeaderProps> = ({ title }) => (
       <HomepageLink to="/">{title}</HomepageLink>
       <div>
         {SECTIONS.map(section => (
-          <PageLink activeClassName="activeTab" to={section.path}>
+          <PageLink key={section.name} activeClassName="activeTab" to={section.path}>
             {section.label}
           </PageLink>
         ))}

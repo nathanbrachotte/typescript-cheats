@@ -37,7 +37,7 @@ interface IndexProps {
 
 const IndexPage: React.FC<IndexProps> = ({ ...allProps }) => {
   const { edges } = allProps.data.allMarkdownRemark
-  console.log({ edges })
+
   return (
     <IndexLayout>
       <Page>
@@ -51,14 +51,14 @@ const IndexPage: React.FC<IndexProps> = ({ ...allProps }) => {
             return (
               edge &&
               !!edge.node.html.includes('<details') && (
-                <>
+                <React.Fragment key={edge.node.id}>
                   <SectionTitle>{edge.node.frontmatter.title}</SectionTitle>
                   <div
                     dangerouslySetInnerHTML={{
                       __html: edge.node.html
                     }}
                   />
-                </>
+                </React.Fragment>
               )
             )
           })}
