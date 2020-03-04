@@ -41,6 +41,29 @@ const interval: ReturnType<typeof setInterval> = setInterval(() => { ... })
 <!-- ************************* -->
 
 <!-- ************************* -->
+<!-- * [START] Extend type without some fields (Omit) * -->
+<!-- ************************* -->
+<details>
+<summary>Extend type without some fields (Omit)</summary>
+
+```typescript
+interface MainComponentProps {
+  wantThat: boolean
+  notThat: boolean
+}
+
+interface SubComponentProps extends Omit<MainComponentProps, 'notThat'> {
+  specificToSubComponent: string
+}
+// accessing SubComponentProps.wantThat will work, SubComponentProps.notThat will throw
+```
+
+</details>
+<!-- ************************* -->
+<!-- * [END] Extend type without some fields (Omit) * -->
+<!-- ************************* -->
+
+<!-- ************************* -->
 <!-- * [START] Asynchronous * -->
 <!-- ************************* -->
 
