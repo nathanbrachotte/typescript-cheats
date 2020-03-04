@@ -25,13 +25,14 @@ interface MyObject = Record<string, string | number>
 <!-- ************************* -->
 
 <!-- ************************* -->
-<!-- * [START] Timeouts * -->
+<!-- * [START] Timeouts/Intervals * -->
 <!-- ************************* -->
 <details>
-<summary>Timeouts</summary>
+<summary>Timeouts/Intervals</summary>
 
 ```typescript
-let timer: ReturnType<typeof setTimeout> = setTimeout(() => { ... });
+const timer: ReturnType<typeof setTimeout> = setTimeout(() => { ... })
+const interval: ReturnType<typeof setInterval> = setInterval(() => { ... })
 ```
 
 </details>
