@@ -64,6 +64,22 @@ interface SubComponentProps extends Omit<MainComponentProps, 'notThat'> {
 <!-- ************************* -->
 
 <!-- ************************* -->
+<!-- * [START] Readonly / Immutable object values * -->
+<!-- ************************* -->
+<details>
+<summary>Readonly / Immutable object values</summary>
+
+```typescript
+const params = { val: 'hello' } // type string, TS would accept value changes
+const params = { val: 'hello' } as const // type "hello", TS throws if you try to update val
+```
+
+</details>
+<!-- ************************* -->
+<!-- * [END] Readonly / Immutable object values * -->
+<!-- ************************* -->
+
+<!-- ************************* -->
 <!-- * [START] Asynchronous * -->
 <!-- ************************* -->
 
