@@ -64,6 +64,32 @@ interface SubComponentProps extends Omit<MainComponentProps, 'notThat'> {
 <!-- ************************* -->
 
 <!-- ************************* -->
+<!-- * [START] Pick fields from a type (Pick)* -->
+<!-- ************************* -->
+<details>
+<summary>Pick fields from a type (Pick)</summary>
+
+```typescript
+interface ParentType {
+  want: string
+  dontWant: string
+}
+
+type PickedType = Pick<ParentType, "want">
+
+const myObject: PickedType = {
+  want: "Something",
+}
+// myObject.dontWant doesnt exist
+```
+
+</details>
+<!-- ************************* -->
+<!-- * [END] Pick fields from a type (Pick)* -->
+<!-- ************************* -->
+
+
+<!-- ************************* -->
 <!-- * [START] Readonly / Immutable object values * -->
 <!-- ************************* -->
 <details>

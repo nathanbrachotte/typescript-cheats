@@ -117,3 +117,6 @@ $RECYCLE.BIN/
 # npm lock
 package-lock.json
 yarn.lock
+
+# webstorm
+.idea
